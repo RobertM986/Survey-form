@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+      <div class="container">
+        <header class="header">
+<h1 id="title" class="text-center">Fresh Start as Junior Programmer</h1>
+<p id="description" class="description text-center">
+All non-experianced people are welcome</p> 
+</header>
+<form id="survey-form">
+  <div class="form-group">
+    <label id="name-label" for="name">Name</label>
+    <input type="text"
+    name="name"
+    id="name"
+    class="form-control"
+    placeholder="Enter your name"
+    required/>
+    </div>
+
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+      type="email"
+      name="email"
+      id="email"
+      class="form-control"
+      placeholder="Enter your Email"
+      required/>
+      </div>
+
+      <div class="form-group">
+      <label id="number-label" for="number"
+      >Age<span class="clue">(optional)</span></label>
+      <input
+      type="number"
+      name="age"
+      id="number"
+      min="20"
+      max="70"
+      class="form-control"
+      placeholder="Age"
+      />
+      </div>
+
+      <div class="form-group">
+        <p>Which option describes your current aknowledge?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select current role</option>
+          <option value="No experience">No experience</option>
+          <option value="Self learner">Self learner</option>
+          <option value="Student">Student</option>
+          <option value="Experienced">Working as programmer</option>
+          <option value="other">Other</option>
+          </select>
+          </div>
+
+          <div class="form-group">
+            <p>Would you recommend this survey form to a friend?</p>
+            <label>
+
+              <input
+              name="user-recommend"
+              value="definetley"
+              type="radio"
+              class="input-radio"
+              checked
+              />Definetley</label>
+              <label>
+
+                <input
+                name="user-recommend"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+                />Maybe</label>
+                <label>
+
+                <input
+                name="user-recommend"
+                value="not-sure"
+                type="radio"
+                class="input-radio"
+                />Not sure</label>
+                </div>
+
+                <div class="form-group">
+                  <p>What is your way to gain aknowledge?</p>
+                  <select id="most-like" name="mostLike" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="Watching Youtube tutorials">Watching Youtube tutorials</option>
+                    <option value="Paying some Web courses">Paying some Web courses</option>
+                    <option value="Front-end programmer">Learning from free platforms</option>
+                    <option value="All above">All above</option>
+                    </select>
+                    </div>
+
+                    <div class="form-group"
+                    <p>
+                      What type of programming roles are most interesting to you?
+                      <span class="clue">(Check all that apply)</span>
+                      </p>
+                      
+                      <label>
+                        <input
+                        name="prefer"
+                        value="Front-end projects"
+                        type="checkbox"
+                        class="input-checkbox"
+                        />Front-end programmer</label>
+
+                        <label>
+                          <input
+                          name="prefer"
+                          value="Back-end projects"
+                          type="checkbox"
+                          class="input-checkbox"
+                          />Back-end programmer</label>
+
+                          <label>
+                            <input
+                            name="prefer"
+                            value="Full-stack programmer"
+                            type="checkbox"
+                            class="input-checkbox"
+                            />Full-stack programmer</label>
+
+                            <label>
+                              <input
+                              name="prefer"
+                              value="Database developing"
+                              type="checkbox"
+                              class="input-checkbox"
+                              />Database developer</label>
+
+                              <label>
+                                <input
+                                name="prefer"
+                                value="Web designer"
+                                type="checkbox"
+                                class="input-checkbox"
+                                />Web designer</label>
+
+                                <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Please share your thoughts..."
+          ></textarea>
+        </div>
+
+                                <div class="form-group">
+                                  <button type="submit" id="submit" class="submit-button">
+                                    Submit
+                                    </button>
+                              </div>
+                        </form>
+              </div>
+        </body>
+  </html>
